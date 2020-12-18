@@ -1,0 +1,486 @@
+Script started on Thu 17 Dec 2020 01:39:02 PM EST
+[root@centos246 ~]# cd /
+[root@centos246 /]# ls
+[0m[01;36mbin[0m   [01;34mdev[0m  [01;34mhome[0m  [01;36mlib64[0m  [01;34mmnt[0m  [01;34mproc[0m  [01;34mrun[0m   [01;34msrv[0m  [30;42mtmp[0m  [01;34mvar[0m
+[01;34mboot[0m  [01;34metc[0m  [01;36mlib[0m   [01;34mmedia[0m  [01;34mopt[0m  [01;34mroot[0m  [01;36msbin[0m  [01;34msys[0m  [01;34musr[0m
+[root@centos246 /]# ls -la
+total 20
+dr-xr-xr-x.  17 root root   224 Dec 15 15:40 [0m[01;34m.[0m
+dr-xr-xr-x.  17 root root   224 Dec 15 15:40 [01;34m..[0m
+lrwxrwxrwx.   1 root root     7 Dec 15 15:37 [01;36mbin[0m -> [01;34musr/bin[0m
+dr-xr-xr-x.   5 root root  4096 Dec 15 16:23 [01;34mboot[0m
+drwxr-xr-x.  20 root root  3120 Dec 17 10:25 [01;34mdev[0m
+drwxr-xr-x.  76 root root  8192 Dec 17 10:26 [01;34metc[0m
+drwxr-xr-x.   3 root root    19 Dec 15 15:43 [01;34mhome[0m
+lrwxrwxrwx.   1 root root     7 Dec 15 15:37 [01;36mlib[0m -> [01;34musr/lib[0m
+lrwxrwxrwx.   1 root root     9 Dec 15 15:37 [01;36mlib64[0m -> [01;34musr/lib64[0m
+drwxrwxr-x.   4 root wheel   36 Dec 15 16:30 [01;34mmedia[0m
+drwxr-xr-x.   2 root root     6 Apr 11  2018 [01;34mmnt[0m
+drwxr-xr-x.   3 root root    39 Dec 15 16:22 [01;34mopt[0m
+dr-xr-xr-x. 108 root root     0 Dec 17 10:26 [01;34mproc[0m
+dr-xr-x---.   5 root root   171 Dec 17 13:34 [01;34mroot[0m
+drwxr-xr-x.  25 root root   760 Dec 17 13:30 [01;34mrun[0m
+lrwxrwxrwx.   1 root root     8 Dec 15 15:37 [01;36msbin[0m -> [01;34musr/sbin[0m
+drwxr-xr-x.   2 root root     6 Apr 11  2018 [01;34msrv[0m
+dr-xr-xr-x.  13 root root     0 Dec 17 10:25 [01;34msys[0m
+drwxrwxrwt.  10 root root  4096 Dec 17 11:57 [30;42mtmp[0m
+drwxr-xr-x.  13 root root   155 Dec 15 15:37 [01;34musr[0m
+drwxr-xr-x.  19 root root   267 Dec 15 15:43 [01;34mvar[0m
+[root@centos246 /]#  [Kmkdir gru[K[K[Ksales[K[K[K[K[K[K[K[K[K[K[Kcd][K
+[root@centos246 ~]# su[K[Kuseradd -c "was[K[K[K[K"Wade Wilson" wwilson[Kn
+[root@centos246 ~]# user [Kadd -c "Peter Parker" pparkse[K[Ker
+[root@centos246 ~]# usrer  [K[Kadd[K [K[K[K[K[K[Ker [Kadd -c "Clark Kent" ckent
+[root@centos246 ~]# user [Kadd -c "C[KVictor Von Doom" vvdom[K[Koom
+[root@centos246 ~]# user [Kadd -c "Otto Octavius" O[Kooctavius
+[root@centos246 ~]# useradd -c "Lex Luthor" L[Klluthor
+[root@centos246 ~]# useradd -c "Gwen Stacy" gstav[Kcy
+[root@centos246 ~]# user [Kadd -c "Lois Lane" llane
+[root@centos246 ~]# useradd -c "Rachel Dawes" rdawes
+[root@centos246 ~]# cat pa[Ksswd
+cat: psswd: No such file or directory
+[root@centos246 ~]# cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:99:99:Nobody:/:/sbin/nologin
+systemd-network:x:192:192:systemd Network Management:/:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+polkitd:x:999:998:User for polkitd:/:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+postfix:x:89:89::/var/spool/postfix:/sbin/nologin
+chrony:x:998:996::/var/lib/chrony:/sbin/nologin
+Chris:x:1000:1000:Chris Parks:/home/Chris:/bin/bash
+tss:x:59:59:Account used by the trousers package to sandbox the tcsd daemon:/dev/null:/sbin/nologin
+vboxadd:x:997:1::/var/run/vboxadd:/bin/false
+wwilson:x:1001:1001:Wade Wilson:/home/wwilson:/bin/bash
+pparker:x:1002:1002:Peter Parker:/home/pparker:/bin/bash
+ckent:x:1003:1003:Clark Kent:/home/ckent:/bin/bash
+vvdoom:x:1004:1004:Victor Von Doom:/home/vvdoom:/bin/bash
+ooctavius:x:1005:1005:Otto Octavius:/home/ooctavius:/bin/bash
+lluthor:x:1006:1006:Lex Luthor:/home/lluthor:/bin/bash
+gstacy:x:1007:1007:Gwen Stacy:/home/gstacy:/bin/bash
+llane:x:1008:1008:Lois Lane:/home/llane:/bin/bash
+rdawes:x:1009:1009:Rachel Dawes:/home/rdawes:/bin/bash
+[root@centos246 ~]# tail -n 9 /etc/passwd
+wwilson:x:1001:1001:Wade Wilson:/home/wwilson:/bin/bash
+pparker:x:1002:1002:Peter Parker:/home/pparker:/bin/bash
+ckent:x:1003:1003:Clark Kent:/home/ckent:/bin/bash
+vvdoom:x:1004:1004:Victor Von Doom:/home/vvdoom:/bin/bash
+ooctavius:x:1005:1005:Otto Octavius:/home/ooctavius:/bin/bash
+lluthor:x:1006:1006:Lex Luthor:/home/lluthor:/bin/bash
+gstacy:x:1007:1007:Gwen Stacy:/home/gstacy:/bin/bash
+llane:x:1008:1008:Lois Lane:/home/llane:/bin/bash
+rdawes:x:1009:1009:Rachel Dawes:/home/rdawes:/bin/bash
+[root@centos246 ~]# ls
+anaconda-ks.cfg  [0m[01;34mbin[0m  [01;34mrepos[0m
+[root@centos246 ~]# ls /home'[K
+[0m[01;34mChris[0m  [01;34mckent[0m  [01;34mgstacy[0m  [01;34mllane[0m  [01;34mlluthor[0m  [01;34mooctavius[0m  [01;34mpparker[0m  [01;34mrdawes[0m  [01;34mvvdoom[0m  [01;34mwwilson[0m
+[root@centos246 ~]# t[Kpp[Kaas[K[Ksswd ckent
+Changing password for user ckent.
+New password: 
+BAD PASSWORD: The password fails the dictionary check - it is based on a dictionary word
+Retype new password: 
+Sorry, passwords do not match.
+New password: 
+BAD PASSWORD: The password fails the dictionary check - it is based on a dictionary word
+Retype new password: 
+passwd: all authentication tokens updated successfully.
+[root@centos246 ~]# passwd ckent[K[K[K[K[Kgstacy
+Changing password for user gstacy.
+New password: 
+BAD PASSWORD: The password fails the dictionary check - it is based on a dictionary word
+Retype new password: 
+passwd: all authentication tokens updated successfully.
+[root@centos246 ~]# passwd gstacy[K[K[K[K[K[Kllane
+Changing password for user llane.
+New password: 
+BAD PASSWORD: The password fails the dictionary check - it is based on a dictionary word
+Retype new password: 
+Sorry, passwords do not match.
+New password: 
+BAD PASSWORD: The password fails the dictionary check - it is based on a dictionary word
+Retype new password: 
+passwd: all authentication tokens updated successfully.
+[root@centos246 ~]# passwd llane[K[K[Kuthor
+Changing password for user lluthor.
+New password: 
+BAD PASSWORD: The password fails the dictionary check - it is based on a dictionary word
+Retype new password: 
+passwd: all authentication tokens updated successfully.
+[root@centos246 ~]# passwd lluthor[K[K[K[K[K[K[Kooctab[Kvius
+Changing password for user ooctavius.
+New password: 
+BAD PASSWORD: The password fails the dictionary check - it is based on a dictionary word
+Retype new password: 
+passwd: all authentication tokens updated successfully.
+[root@centos246 ~]# passwd ooctavius[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+anaconda-ks.cfg  [0m[01;34mbin[0m  [01;34mrepos[0m
+[root@centos246 ~]# ls/[K /home
+[0m[01;34mChris[0m  [01;34mckent[0m  [01;34mgstacy[0m  [01;34mllane[0m  [01;34mlluthor[0m  [01;34mooctavius[0m  [01;34mpparker[0m  [01;34mrdawes[0m  [01;34mvvdoom[0m  [01;34mwwilson[0m
+[root@centos246 ~]# ls /home[Kpasswd ooctavius[K[K[K[K[K[K[K[K[Kpparker
+Changing password for user pparker.
+New password: 
+BAD PASSWORD: The password fails the dictionary check - it is based on a dictionary word
+Retype new password: 
+passwd: all authentication tokens updated successfully.
+[root@centos246 ~]# passwd pparker[6Pls /homepasswd pparker[K[K[K[K[K[K[Krdawes
+Changing password for user rdawes.
+New password: 
+BAD PASSWORD: The password fails the dictionary check - it is based on a dictionary word
+Retype new password: 
+passwd: all authentication tokens updated successfully.
+[root@centos246 ~]# passwd rdawes[K[K[K[K[K[Kvvdoom
+Changing password for user vvdoom.
+New password: 
+BAD PASSWORD: The password fails the dictionary check - it is based on a dictionary word
+Retype new password: 
+passwd: all authentication tokens updated successfully.
+[root@centos246 ~]# passwd vvdoom[K[K[K[K[K[Kwwilson
+Changing password for user wwilson.
+New password: 
+BAD PASSWORD: The password fails the dictionary check - it is based on a dictionary word
+Retype new password: 
+passwd: all authentication tokens updated successfully.
+[root@centos246 ~]# tail -n 9 /etc/shadow
+wwilson:$6$sQ/FMpZv$kJY77tk.O3pP.SNaGCBbdYgSd5cyVuJoSeHPk.6gp4IvAnF1varGORxI7RZ/aeJATMJw8eSOWfz/1AumwQm0g/:18614:0:99999:7:::
+pparker:$6$XX/Ayc8B$/MDw/8bZdD37JVI/uiOKsuvJJd9vlnZRpHE5RoxFeg.TGLLA9dmuHDlQevU0Fc7KI9kGkAjjpAVP88q3MLnwu/:18614:0:99999:7:::
+ckent:$6$PYDw3qnk$jdNAezSCaDNGSwMy./Um1Ih54.MT1ntRSew1m../X0.uQG2Fnpip9Iyxi1CDE/rqZPEKqFKwODiYJKzQCct6//:18614:0:99999:7:::
+vvdoom:$6$gpzk54CW$xiCIUthrRfK8Xm/kEyZW3dAx4FrtW.VSTgHB2UeGaKxrcX.2H4kLcrnAY93gbqT0UWQZHFdN.IsH5jHKlQb441:18614:0:99999:7:::
+ooctavius:$6$PocCUxHZ$4f3n/KKzfuA4pavm0PlE2zLYZBag4pg725WPGME.4Ob0W8N9iYEVWReROqHdBnSe5IcaWNxqh2oSvfkavR80k/:18614:0:99999:7:::
+lluthor:$6$6bplP0xL$U29AZy/XEP.dQgQwrS5HyHWHyst5m3e7efxgCgSyDH1d2LF6Sb4nFg4c03iN.bojFNT2cHUijJG4kgKeAXmtb.:18614:0:99999:7:::
+gstacy:$6$VzSyrdYg$tEpSCapTDilKftukdesJxOiDA1laj0MBAq9GdXdVXVNHgoMs2lxOI4DMTxri3rqOAxLpuxGGRmcxGZottOCM81:18614:0:99999:7:::
+llane:$6$wK2JN6Vo$E8ha9Pdd3t1SbdiEl6Dql6HGf1FHgERfBTz8UEMzAROoxlXGErsABRGE0/cC3iVV.IPQRz6aJIHW2Blaw1l53.:18614:0:99999:7:::
+rdawes:$6$dRiYaKFZ$gLrhN6hA6KgQgb89kYNIZHp2NZVE.0fRbIIloKl9j4KT7E4NT2pf7cMDDomjluPkUcAVD6gLf0Lbpvw7FNsn5.:18614:0:99999:7:::
+[root@centos246 ~]# ls /home
+[0m[01;34mChris[0m  [01;34mckent[0m  [01;34mgstacy[0m  [01;34mllane[0m  [01;34mlluthor[0m  [01;34mooctavius[0m  [01;34mpparker[0m  [01;34mrdawes[0m  [01;34mvvdoom[0m  [01;34mwwilson[0m
+[root@centos246 ~]# cat /etc/group
+root:x:0:
+bin:x:1:
+daemon:x:2:
+sys:x:3:
+adm:x:4:
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mem:x:8:
+kmem:x:9:
+wheel:x:10:Chris
+cdrom:x:11:
+mail:x:12:postfix
+man:x:15:
+dialout:x:18:
+floppy:x:19:
+games:x:20:
+tape:x:33:
+video:x:39:
+ftp:x:50:
+lock:x:54:
+audio:x:63:
+nobody:x:99:
+users:x:100:
+utmp:x:22:
+utempter:x:35:
+input:x:999:
+systemd-journal:x:190:
+systemd-network:x:192:
+dbus:x:81:
+polkitd:x:998:
+ssh_keys:x:997:
+sshd:x:74:
+postdrop:x:90:
+postfix:x:89:
+chrony:x:996:
+Chris:x:1000:Chris
+tss:x:59:
+stapusr:x:156:
+stapsys:x:157:
+stapdev:x:158:
+vboxsf:x:995:Chris
+wwilson:x:1001:
+pparker:x:1002:
+ckent:x:1003:
+vvdoom:x:1004:
+ooctavius:x:1005:
+lluthor:x:1006:
+gstacy:x:1007:
+llane:x:1008:
+rdawes:x:1009:
+[root@centos246 ~]# groupadd heros
+[root@centos246 ~]# groupadd heros[K[K[K[K[Kvillians
+[root@centos246 ~]# groupadd villians[K[K[K[K[K[K[K[Kcivilians
+[root@centos246 ~]# ls /hpme[K[K[Kome
+[0m[01;34mChris[0m  [01;34mckent[0m  [01;34mgstacy[0m  [01;34mllane[0m  [01;34mlluthor[0m  [01;34mooctavius[0m  [01;34mpparker[0m  [01;34mrdawes[0m  [01;34mvvdoom[0m  [01;34mwwilson[0m
+[root@centos246 ~]# usermod -a -G herps pparker
+usermod: group 'herps' does not exist
+[root@centos246 ~]# tail -n5 /etc/grpi[[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[Koup
+llane:x:1008:
+rdawes:x:1009:
+heros:x:1010:
+villians:x:1011:
+civilians:x:1012:
+[root@centos246 ~]# tail -n5 /etc/groupusermod -a -G herps pparker[1P[1@o
+[root@centos246 ~]# usermod -a -G heros pparker[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Ptail -n5 /etc/group
+llane:x:1008:
+rdawes:x:1009:
+heros:x:1010:pparker
+villians:x:1011:
+civilians:x:1012:
+[root@centos246 ~]# tail -n5 /etc/groupusermod -a -G heros pparker[K[K[K[K[K[K[Kwwilson
+[root@centos246 ~]# usermod -a -G heros wwilson[K[K[K[K[K[K[Kckent
+[root@centos246 ~]# usermod -a -G heros ckentwwilson[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Ptail -n5 /etc/group
+llane:x:1008:
+rdawes:x:1009:
+heros:x:1010:pparker,wwilson,ckent
+villians:x:1011:
+civilians:x:1012:
+[root@centos246 ~]# tail -n5 /etc/groupusermod -a -G heros ckent[K[K[K[K[K[K[K[K[K[K[Kvillians vvdoom
+[root@centos246 ~]# usermod -a -G villians vvdoom[K[K[K[K[K[Koocc[Ktavius
+[root@centos246 ~]# usermod -a -G villians ooctavius[K[K[K[K[K[K[K[K[Klluthor
+[root@centos246 ~]# usermod -a -G villians lluthor[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcivilians gstacy
+[root@centos246 ~]# usermod -a -G civilians gstacy[K[K[K[K[K[Kllane
+[root@centos246 ~]# usermod -a -G civilians llane[K[K[K[K[Krdawes
+[root@centos246 ~]# usermod -a -G civilians rdawes[1Pllanegstacyvillians lluthorooctavius[3Pvvdoom[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Ptail -n5 /etc/group
+llane:x:1008:
+rdawes:x:1009:
+heros:x:1010:pparker,wwilson,ckent
+villians:x:1011:vvdoom,ooctavius,lluthor
+civilians:x:1012:gstacy,llane,rdawes
+[root@centos246 ~]# groups ppaer[K[Krks[Ker
+pparker : pparker heros
+[root@centos246 ~]# clear
+[H[J[root@centos246 ~]# su - ppaer~[K[K[Krker
+[pparker@centos246 ~]$ pwd
+/home/pparker
+[pparker@centos246 ~]$ groups
+pparker heros
+[pparker@centos246 ~]$ su - r[K[K[K[K[K[Klogout
+[root@centos246 ~]# tiia[K[K[Kail n=[K[K-n /etc.[K/group
+tail: /etc/group: invalid number of lines
+[root@centos246 ~]# tail -n /etc/group[C5 /etc/group
+llane:x:1008:
+rdawes:x:1009:
+heros:x:1010:pparker,wwilson,ckent
+villians:x:1011:vvdoom,ooctavius,lluthor
+civilians:x:1012:gstacy,llane,rdawes
+[root@centos246 ~]# cd /
+[root@centos246 /]# ls
+[0m[01;36mbin[0m   [01;34mdev[0m  [01;34mhome[0m  [01;36mlib64[0m  [01;34mmnt[0m  [01;34mproc[0m  [01;34mrun[0m   [01;34msrv[0m  [30;42mtmp[0m  [01;34mvar[0m
+[01;34mboot[0m  [01;34metc[0m  [01;36mlib[0m   [01;34mmedia[0m  [01;34mopt[0m  [01;34mroot[0m  [01;36msbin[0m  [01;34msys[0m  [01;34musr[0m
+[root@centos246 /]# mkdir /usr/heros
+[root@centos246 /]# mkdir /usr/vi;;[K[Kllians
+[root@centos246 /]# mkdir /usr/civilians
+[root@centos246 /]# ls
+[0m[01;36mbin[0m   [01;34mdev[0m  [01;34mhome[0m  [01;36mlib64[0m  [01;34mmnt[0m  [01;34mproc[0m  [01;34mrun[0m   [01;34msrv[0m  [30;42mtmp[0m  [01;34mvar[0m
+[01;34mboot[0m  [01;34metc[0m  [01;36mlib[0m   [01;34mmedia[0m  [01;34mopt[0m  [01;34mroot[0m  [01;36msbin[0m  [01;34msys[0m  [01;34musr[0m
+[root@centos246 /]# ls /usr
+[0m[01;34mbin[0m        [01;34metc[0m    [01;34mheros[0m    [01;34mlib[0m    [01;34mlibexec[0m  [01;34msbin[0m   [01;34msrc[0m  [01;34mvillians[0m
+[01;34mcivilians[0m  [01;34mgames[0m  [01;34minclude[0m  [01;34mlib64[0m  [01;34mlocal[0m    [01;34mshare[0m  [01;36mtmp[0m
+[root@centos246 /]# l-[Ks -a
+[0m[01;34m.[0m   [01;36mbin[0m   [01;34mdev[0m  [01;34mhome[0m  [01;36mlib64[0m  [01;34mmnt[0m  [01;34mproc[0m  [01;34mrun[0m   [01;34msrv[0m  [30;42mtmp[0m  [01;34mvar[0m
+[01;34m..[0m  [01;34mboot[0m  [01;34metc[0m  [01;36mlib[0m   [01;34mmedia[0m  [01;34mopt[0m  [01;34mroot[0m  [01;36msbin[0m  [01;34msys[0m  [01;34musr[0m
+[root@centos246 /]# ls -l /usr
+total 120
+dr-xr-xr-x.  2 root root 24576 Dec 15 16:22 [0m[01;34mbin[0m
+drwxr-xr-x.  2 root root     6 Dec 18 13:48 [01;34mcivilians[0m
+drwxr-xr-x.  2 root root     6 Apr 11  2018 [01;34metc[0m
+drwxr-xr-x.  2 root root     6 Apr 11  2018 [01;34mgames[0m
+drwxr-xr-x.  2 root root     6 Dec 18 13:48 [01;34mheros[0m
+drwxr-xr-x. 35 root root  4096 Dec 15 15:56 [01;34minclude[0m
+dr-xr-xr-x. 28 root root  4096 Dec 15 15:56 [01;34mlib[0m
+dr-xr-xr-x. 42 root root 24576 Dec 15 15:56 [01;34mlib64[0m
+drwxr-xr-x. 24 root root  4096 Dec 15 15:56 [01;34mlibexec[0m
+drwxr-xr-x. 12 root root   131 Dec 15 15:37 [01;34mlocal[0m
+dr-xr-xr-x.  2 root root 16384 Dec 17 10:26 [01;34msbin[0m
+drwxr-xr-x. 87 root root  4096 Dec 15 15:56 [01;34mshare[0m
+drwxr-xr-x.  4 root root    34 Dec 15 16:22 [01;34msrc[0m
+lrwxrwxrwx.  1 root root    10 Dec 15 15:37 [01;36mtmp[0m -> [30;42m../var/tmp[0m
+drwxr-xr-x.  2 root root     6 Dec 18 13:48 [01;34mvillians[0m
+[root@centos246 /]# chgrp heros /usr/herps[K[Kos
+[root@centos246 /]# ls -l /usr
+total 120
+dr-xr-xr-x.  2 root root  24576 Dec 15 16:22 [0m[01;34mbin[0m
+drwxr-xr-x.  2 root root      6 Dec 18 13:48 [01;34mcivilians[0m
+drwxr-xr-x.  2 root root      6 Apr 11  2018 [01;34metc[0m
+drwxr-xr-x.  2 root root      6 Apr 11  2018 [01;34mgames[0m
+drwxr-xr-x.  2 root heros     6 Dec 18 13:48 [01;34mheros[0m
+drwxr-xr-x. 35 root root   4096 Dec 15 15:56 [01;34minclude[0m
+dr-xr-xr-x. 28 root root   4096 Dec 15 15:56 [01;34mlib[0m
+dr-xr-xr-x. 42 root root  24576 Dec 15 15:56 [01;34mlib64[0m
+drwxr-xr-x. 24 root root   4096 Dec 15 15:56 [01;34mlibexec[0m
+drwxr-xr-x. 12 root root    131 Dec 15 15:37 [01;34mlocal[0m
+dr-xr-xr-x.  2 root root  16384 Dec 17 10:26 [01;34msbin[0m
+drwxr-xr-x. 87 root root   4096 Dec 15 15:56 [01;34mshare[0m
+drwxr-xr-x.  4 root root     34 Dec 15 16:22 [01;34msrc[0m
+lrwxrwxrwx.  1 root root     10 Dec 15 15:37 [01;36mtmp[0m -> [30;42m../var/tmp[0m
+drwxr-xr-x.  2 root root      6 Dec 18 13:48 [01;34mvillians[0m
+[root@centos246 /]# ls -l /usrchgrp heros /usr/heros[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K villians /usr/vi;;[K[Kllians
+[root@centos246 /]# chgrp civilians /usr/civilians
+[root@centos246 /]# chgrp civilians /usr/civilians[2Pvillians /usr/villians[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18Pls -l /usr
+total 120
+dr-xr-xr-x.  2 root root      24576 Dec 15 16:22 [0m[01;34mbin[0m
+drwxr-xr-x.  2 root civilians     6 Dec 18 13:48 [01;34mcivilians[0m
+drwxr-xr-x.  2 root root          6 Apr 11  2018 [01;34metc[0m
+drwxr-xr-x.  2 root root          6 Apr 11  2018 [01;34mgames[0m
+drwxr-xr-x.  2 root heros         6 Dec 18 13:48 [01;34mheros[0m
+drwxr-xr-x. 35 root root       4096 Dec 15 15:56 [01;34minclude[0m
+dr-xr-xr-x. 28 root root       4096 Dec 15 15:56 [01;34mlib[0m
+dr-xr-xr-x. 42 root root      24576 Dec 15 15:56 [01;34mlib64[0m
+drwxr-xr-x. 24 root root       4096 Dec 15 15:56 [01;34mlibexec[0m
+drwxr-xr-x. 12 root root        131 Dec 15 15:37 [01;34mlocal[0m
+dr-xr-xr-x.  2 root root      16384 Dec 17 10:26 [01;34msbin[0m
+drwxr-xr-x. 87 root root       4096 Dec 15 15:56 [01;34mshare[0m
+drwxr-xr-x.  4 root root         34 Dec 15 16:22 [01;34msrc[0m
+lrwxrwxrwx.  1 root root         10 Dec 15 15:37 [01;36mtmp[0m -> [30;42m../var/tmp[0m
+drwxr-xr-x.  2 root villians      6 Dec 18 13:48 [01;34mvillians[0m
+[root@centos246 /]# chmod g=[K+w /usr/heros
+[root@centos246 /]# chmod g+w /usr/heros[10Pls -l /usr
+total 120
+dr-xr-xr-x.  2 root root      24576 Dec 15 16:22 [0m[01;34mbin[0m
+drwxr-xr-x.  2 root civilians     6 Dec 18 13:48 [01;34mcivilians[0m
+drwxr-xr-x.  2 root root          6 Apr 11  2018 [01;34metc[0m
+drwxr-xr-x.  2 root root          6 Apr 11  2018 [01;34mgames[0m
+drwxrwxr-x.  2 root heros         6 Dec 18 13:48 [01;34mheros[0m
+drwxr-xr-x. 35 root root       4096 Dec 15 15:56 [01;34minclude[0m
+dr-xr-xr-x. 28 root root       4096 Dec 15 15:56 [01;34mlib[0m
+dr-xr-xr-x. 42 root root      24576 Dec 15 15:56 [01;34mlib64[0m
+drwxr-xr-x. 24 root root       4096 Dec 15 15:56 [01;34mlibexec[0m
+drwxr-xr-x. 12 root root        131 Dec 15 15:37 [01;34mlocal[0m
+dr-xr-xr-x.  2 root root      16384 Dec 17 10:26 [01;34msbin[0m
+drwxr-xr-x. 87 root root       4096 Dec 15 15:56 [01;34mshare[0m
+drwxr-xr-x.  4 root root         34 Dec 15 16:22 [01;34msrc[0m
+lrwxrwxrwx.  1 root root         10 Dec 15 15:37 [01;36mtmp[0m -> [30;42m../var/tmp[0m
+drwxr-xr-x.  2 root villians      6 Dec 18 13:48 [01;34mvillians[0m
+[root@centos246 /]# ls -l /usrchmod g+w /usr/heros[K[K[K[K[Kvillians
+[root@centos246 /]# chmod g+w /usr/villians[K[K[K[K[K[K[K[Kcivilin[Kans
+[root@centos246 /]# chmod g+w /usr/civilians[1Pvillians[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13Pls -l /usr
+total 120
+dr-xr-xr-x.  2 root root      24576 Dec 15 16:22 [0m[01;34mbin[0m
+drwxrwxr-x.  2 root civilians     6 Dec 18 13:48 [01;34mcivilians[0m
+drwxr-xr-x.  2 root root          6 Apr 11  2018 [01;34metc[0m
+drwxr-xr-x.  2 root root          6 Apr 11  2018 [01;34mgames[0m
+drwxrwxr-x.  2 root heros         6 Dec 18 13:48 [01;34mheros[0m
+drwxr-xr-x. 35 root root       4096 Dec 15 15:56 [01;34minclude[0m
+dr-xr-xr-x. 28 root root       4096 Dec 15 15:56 [01;34mlib[0m
+dr-xr-xr-x. 42 root root      24576 Dec 15 15:56 [01;34mlib64[0m
+drwxr-xr-x. 24 root root       4096 Dec 15 15:56 [01;34mlibexec[0m
+drwxr-xr-x. 12 root root        131 Dec 15 15:37 [01;34mlocal[0m
+dr-xr-xr-x.  2 root root      16384 Dec 17 10:26 [01;34msbin[0m
+drwxr-xr-x. 87 root root       4096 Dec 15 15:56 [01;34mshare[0m
+drwxr-xr-x.  4 root root         34 Dec 15 16:22 [01;34msrc[0m
+lrwxrwxrwx.  1 root root         10 Dec 15 15:37 [01;36mtmp[0m -> [30;42m../var/tmp[0m
+drwxrwxr-x.  2 root villians      6 Dec 18 13:48 [01;34mvillians[0m
+[root@centos246 /]# su - pparker
+Last login: Fri Dec 18 13:44:01 EST 2020 on pts/0
+[pparker@centos246 ~]$ who [Kami
+pparker
+[pparker@centos246 ~]$ vi /usr/herps[K[Kos/web.tc][Kxt[K[K[Kxt
+[1;37r[?25h[?8c[?25h[?0c[27m[24m[0m[H[J[?25l[?1c[37;1H"/usr/heros/web.txt" [New File][2;1H[1m[34m~                                                                                                   [3;1H~                                                                                                   [4;1H~                                                                                                   [5;1H~                                                                                                   [6;1H~                                                                                                   [7;1H~                                                                                                   [8;1H~                                                                                                   [9;1H~                                                                                                   [10;1H~                                                                                                   [11;1H~                                                                                                   [12;1H~                                                                                                   [13;1H~                                                                                                   [14;1H~                                                                                                   [15;1H~                                                                                                   [16;1H~                                                                                                   [17;1H~                                                                                                   [18;1H~                                                                                                   [19;1H~                                                                                                   [20;1H~                                                                                                   [21;1H~                                                                                                   [22;1H~                                                                                                   [23;1H~                                                                                                   [24;1H~                                                                                                   [25;1H~                                                                                                   [26;1H~                                                                                                   [27;1H~                                                                                                   [28;1H~                                                                                                   [29;1H~                                                                                                   [30;1H~                                                                                                   [31;1H~                                                                                                   [32;1H~                                                                                                   [33;1H~                                                                                                   [34;1H~                                                                                                   [35;1H~                                                                                                   [36;1H~                                                                                                   [1;1H[?25h[?0c[?25l[?1c[0m[37;1H[1m-- INSERT --[0m[37;13H[K[1;1H[?25h[?0c[?25l[?1cs[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1c[?25h[?0c[?25l[?1c[1;1H[K[1;1H[?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1ch[?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1cs[?25h[?0c[?25l[?1c[1;4H[K[1;4H[?25h[?0c[?25l[?1c[1;3H[K[1;3H[?25h[?0c[?25l[?1c[1;2H[K[1;2H[?25h[?0c[?25l[?1c[1;1H[K[1;1H[?25h[?0c[?25l[?1c"[?25h[?0c[?25l[?1cT[?25h[?0c[?25l[?1ch[?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1cs[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1cf[?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1c[1;8H[K[1;8H[?25h[?0c[?25l[?1c[1;7H[K[1;7H[?25h[?0c[?25l[?1c[?25h[?0c[?25l[?1c[1;5H[K[1;5H[?25h[?0c[?25l[?1c[1;4H[K[1;4H[?25h[?0c[?25l[?1c[1;3H[K[1;3H[?25h[?0c[?25l[?1c[1;2H[K[1;2H[?25h[?0c[?25l[?1c[1;1H[K[1;1H[?25h[?0c[?25l[?1cT[?25h[?0c[?25l[?1ch[?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1cs[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1cf[?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1cl[?25h[?0c[?25l[?1ce[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1cc[?25h[?0c[?25l[?1co[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1ca[?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1cl[?25h[?0c[?25l[?1c[1;17H[K[1;17H[?25h[?0c[?25l[?1cs[?25h[?0c[?25l[?1c[1;17H[K[1;17H[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1cs[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1cc[?25h[?0c[?25l[?1co[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1cf[?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1cd[?25h[?0c[?25l[?1ce[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1ca[?25h[?0c[?25l[?1cl[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1cf[?25h[?0c[?25l[?1cr[?25h[?0c[?25l[?1co[?25h[?0c[?25l[?1c[1;37H[K[1;37H[?25h[?0c[?25l[?1c[1;36H[K[1;36H[?25h[?0c[?25l[?1co[?25h[?0c[?25l[?1cr[?25h[?0c[?25l[?1cm[?25h[?0c[?25l[?1ca[?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1co[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1cf[?25h[?0c[?25l[?1co[?25h[?0c[?25l[?1cr[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1ch[?25h[?0c[?25l[?1ce[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1ch[?25h[?0c[?25l[?1ce[?25h[?0c[?25l[?1cr[?25h[?0c[?25l[?1co[?25h[?0c[?25l[?1cs[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1cd[?25h[?0c[?25l[?1ce[?25h[?0c[?25l[?1cp[?25h[?0c[?25l[?1ca[?25h[?0c[?25l[?1cr[?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1cm[?25h[?0c[?25l[?1ce[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1c.[?25h[?0c[?25l[?1c:[?25h[?0c[?25l[?1c[1;70H[K[1;70H[?25h[?0c[?25l[?1c:[?25h[?0c[?25l[?1c[1;70H[K[1;70H[?25h[?0c[?25l[?1c:[?25h[?0c[?25l[?1c[1;70H[K[1;70H[?25h[?0c[?25l[?1c[2;1H[K[2;1H[?25h[?0c[?25l[?1c:[?25h[?0c[?25l[?1c[2;1H[K[2;1H[?25h[?0c[37;1H[K[2;1H[?25l[?1c[?25h[?0c[?25l[?1c[37;1H:[?25h[?0cwq[?25l[?1c"/usr/heros/web.txt" [New] 2L, 71C written[?25h[?0c
+[pparker@centos246 ~]$ ls -l
+total 0
+[pparker@centos246 ~]$ ls -l /usr/heros/
+total 4
+-rw-rw-r--. 1 pparker pparker 71 Dec 18 13:56 web.txt
+[pparker@centos246 ~]$ logout
+[root@centos246 /]# su - octa[K[K[Koctavius
+[ooctavius@centos246 ~]$ vi /usr/heros/tst.txt
+[1;37r[?25h[?8c[?25h[?0c[27m[24m[0m[H[J[?25l[?1c[37;1H"/usr/heros/tst.txt" [New File][2;1H[1m[34m~                                                                                                   [3;1H~                                                                                                   [4;1H~                                                                                                   [5;1H~                                                                                                   [6;1H~                                                                                                   [7;1H~                                                                                                   [8;1H~                                                                                                   [9;1H~                                                                                                   [10;1H~                                                                                                   [11;1H~                                                                                                   [12;1H~                                                                                                   [13;1H~                                                                                                   [14;1H~                                                                                                   [15;1H~                                                                                                   [16;1H~                                                                                                   [17;1H~                                                                                                   [18;1H~                                                                                                   [19;1H~                                                                                                   [20;1H~                                                                                                   [21;1H~                                                                                                   [22;1H~                                                                                                   [23;1H~                                                                                                   [24;1H~                                                                                                   [25;1H~                                                                                                   [26;1H~                                                                                                   [27;1H~                                                                                                   [28;1H~                                                                                                   [29;1H~                                                                                                   [30;1H~                                                                                                   [31;1H~                                                                                                   [32;1H~                                                                                                   [33;1H~                                                                                                   [34;1H~                                                                                                   [35;1H~                                                                                                   [36;1H~                                                                                                   [1;1H[?25h[?0c[?25l[?1c[0m[37;1H[1m-- INSERT --[0m[37;13H[K[1;1H[?25h[?0c[?25l[?1cs[?25h[?0c[?25l[?1ca[?25h[?0c[?25l[?1co[?25h[?0c[?25l[?1cj[?25h[?0c[?25l[?1cg[?25h[?0c[?25l[?1co[?25h[?0c[?25l[?1cs[?25h[?0c[?25l[?1c[2;1H[K[2;1H[?25h[?0c[37;1H[K[2;1H[?25l[?1c[?25h[?0c[?25l[?1c[37;1H:[?25h[?0cwq[?25l[?1c"/usr/heros/tst.txt"
+[1m[37m[41m"/usr/heros/tst.txt" E212: Can't open file for writing[0m
+[1m[32mPress ENTER or type command to continue[?25h[?0c[0m[1;1H[2L[?25l[?1c[1;1Hsaojgos[37;1H[K[2;1H[?25h[?0c[?25l[?1c[37;1H:[?25h[?0cq[?25l[?1c[1m[37m[41mE37: No write since last change (add ! to override)[2;1H[?25h[?0c[?25l[?1c[0m[37;1H[K[37;1H:[?25h[?0cq![?25l[?1c[?25h[?0c[37;1H[K[37;1H[ooctavius@centos246 ~]$ vi /usr/villians/we[K[Koct.txt
+[1;37r[?25h[?8c[?25h[?0c[27m[24m[0m[H[J[?25l[?1c[37;1H"/usr/villians/oct.txt" [New File][2;1H[1m[34m~                                                                                                   [3;1H~                                                                                                   [4;1H~                                                                                                   [5;1H~                                                                                                   [6;1H~                                                                                                   [7;1H~                                                                                                   [8;1H~                                                                                                   [9;1H~                                                                                                   [10;1H~                                                                                                   [11;1H~                                                                                                   [12;1H~                                                                                                   [13;1H~                                                                                                   [14;1H~                                                                                                   [15;1H~                                                                                                   [16;1H~                                                                                                   [17;1H~                                                                                                   [18;1H~                                                                                                   [19;1H~                                                                                                   [20;1H~                                                                                                   [21;1H~                                                                                                   [22;1H~                                                                                                   [23;1H~                                                                                                   [24;1H~                                                                                                   [25;1H~                                                                                                   [26;1H~                                                                                                   [27;1H~                                                                                                   [28;1H~                                                                                                   [29;1H~                                                                                                   [30;1H~                                                                                                   [31;1H~                                                                                                   [32;1H~                                                                                                   [33;1H~                                                                                                   [34;1H~                                                                                                   [35;1H~                                                                                                   [36;1H~                                                                                                   [1;1H[?25h[?0c[?25l[?1c[0m[37;1H[1m-- INSERT --[0m[37;13H[K[1;1H[?25h[?0c[?25l[?1cs[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1c[?25h[?0c[?25l[?1c[1;1H[K[1;1H[?25h[?0c[?25l[?1cT[?25h[?0c[?25l[?1ch[?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1cs[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1cf[?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1cl[?25h[?0c[?25l[?1ce[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1cc[?25h[?0c[?25l[?1co[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1ca[?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1cs[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1cc[?25h[?0c[?25l[?1co[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1cf[?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1cd[?25h[?0c[?25l[?1ce[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1ca[?25h[?0c[?25l[?1cl[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1c[1;35H[K[1;35H[?25h[?0c[?25l[?1cf[?25h[?0c[?25l[?1co[?25h[?0c[?25l[?1cr[?25h[?0c[?25l[?1cm[?25h[?0c[?25l[?1ca[?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1co[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1co[?25h[?0c[?25l[?1cf[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1ch[?25h[?0c[?25l[?1ce[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1cv[?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1cl[?25h[?0c[?25l[?1cl[?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1ca[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1cd[?25h[?0c[?25l[?1ce[?25h[?0c[?25l[?1cp[?25h[?0c[?25l[?1ca[?25h[?0c[?25l[?1cr[?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1cm[?25h[?0c[?25l[?1ce[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1c.[?25h[?0c[?25l[?1c[2;1H[K[2;1H[?25h[?0c[37;1H[K[2;1H[?25l[?1c[?25h[?0c[?25l[?1c[37;1H:[?25h[?0cwq[?25l[?1c"/usr/villians/oct.txt" [New] 2L, 72C written[?25h[?0c
+[ooctavius@centos246 ~]$ logoug[Kt
+[root@centos246 /]# su - gstacy
+[gstacy@centos246 ~]$ vi /usr/civilians/lab.txt
+[1;37r[?25h[?8c[?25h[?0c[27m[24m[0m[H[J[?25l[?1c[37;1H"/usr/civilians/lab.txt" [New File][2;1H[1m[34m~                                                                                                   [3;1H~                                                                                                   [4;1H~                                                                                                   [5;1H~                                                                                                   [6;1H~                                                                                                   [7;1H~                                                                                                   [8;1H~                                                                                                   [9;1H~                                                                                                   [10;1H~                                                                                                   [11;1H~                                                                                                   [12;1H~                                                                                                   [13;1H~                                                                                                   [14;1H~                                                                                                   [15;1H~                                                                                                   [16;1H~                                                                                                   [17;1H~                                                                                                   [18;1H~                                                                                                   [19;1H~                                                                                                   [20;1H~                                                                                                   [21;1H~                                                                                                   [22;1H~                                                                                                   [23;1H~                                                                                                   [24;1H~                                                                                                   [25;1H~                                                                                                   [26;1H~                                                                                                   [27;1H~                                                                                                   [28;1H~                                                                                                   [29;1H~                                                                                                   [30;1H~                                                                                                   [31;1H~                                                                                                   [32;1H~                                                                                                   [33;1H~                                                                                                   [34;1H~                                                                                                   [35;1H~                                                                                                   [36;1H~                                                                                                   [1;1H[?25h[?0c[?25l[?1c[0m[37;1H[1m-- INSERT --[0m[37;13H[K[1;1H[?25h[?0c[?25l[?1cg[?25h[?0c[?25l[?1cl[?25h[?0c[?25l[?1cg[?25h[?0c[?25l[?1ch[?25h[?0c[?25l[?1c[1;4H[K[1;4H[?25h[?0c[?25l[?1c[1;3H[K[1;3H[?25h[?0c[?25l[?1c[1;2H[K[1;2H[?25h[?0c[?25l[?1c[1;1H[K[1;1H[?25h[?0c[?25l[?1cT[?25h[?0c[?25l[?1ch[?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1cs[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1cf[?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1cl[?25h[?0c[?25l[?1ce[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1cc[?25h[?0c[?25l[?1co[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1ca[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1cs[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1cc[?25h[?0c[?25l[?1co[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1cf[?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1cd[?25h[?0c[?25l[?1ce[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1ca[?25h[?0c[?25l[?1cl[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1cf[?25h[?0c[?25l[?1cr[?25h[?0c[?25l[?1co[?25h[?0c[?25l[?1cm[?25h[?0c[?25l[?1c[1;38H[K[1;38H[?25h[?0c[?25l[?1c[1;37H[K[1;37H[?25h[?0c[?25l[?1co[?25h[?0c[?25l[?1c[1;37H[K[1;37H[?25h[?0c[?25l[?1c[1;36H[K[1;36H[?25h[?0c[?25l[?1co[?25h[?0c[?25l[?1cr[?25h[?0c[?25l[?1cm[?25h[?0c[?25l[?1ca[?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1co[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1cf[?25h[?0c[?25l[?1co[?25h[?0c[?25l[?1cr[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1ch[?25h[?0c[?25l[?1ce[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1cc[?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1cv[?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1cl[?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1ca[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1cd[?25h[?0c[?25l[?1ce[?25h[?0c[?25l[?1cp[?25h[?0c[?25l[?1ca[?25h[?0c[?25l[?1cr[?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1cm[?25h[?0c[?25l[?1ce[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1c.[?25h[?0c[?25l[?1c[2;1H[K[2;1H[?25h[?0c[?25l[?1c:[?25h[?0c[?25l[?1c[2;1H[K[2;1H[?25h[?0c[37;1H[K[2;1H[?25l[?1c[?25h[?0c[?25l[?1c[37;1H:[?25h[?0cwq[?25l[?1c"/usr/civilians/lab.txt" [New] 2L, 74C written[?25h[?0c
+[gstacy@centos246 ~]$ logout
+[root@centos246 /]# sh[K[Kchmod g+s /use[Kr/heros
+[root@centos246 /]# chmod g+s /usr/heros[K[K[K[K[Kvillians
+[root@centos246 /]# chmod g+s /usr/villians[K[K[K[K[K[K[K[Kcivilians
+[root@centos246 /]# chmod g+s /usr/civilians[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kls -l/usr
+ls: invalid option -- '/'
+Try 'ls --help' for more information.
+[root@centos246 /]# ls -l/usr l/usr[1Pl/usr[C /usr
+total 120
+dr-xr-xr-x.  2 root root      24576 Dec 15 16:22 [0m[01;34mbin[0m
+drwxrwsr-x.  2 root civilians    21 Dec 18 14:02 [01;34mcivilians[0m
+drwxr-xr-x.  2 root root          6 Apr 11  2018 [01;34metc[0m
+drwxr-xr-x.  2 root root          6 Apr 11  2018 [01;34mgames[0m
+drwxrwsr-x.  2 root heros        21 Dec 18 13:56 [01;34mheros[0m
+drwxr-xr-x. 35 root root       4096 Dec 15 15:56 [01;34minclude[0m
+dr-xr-xr-x. 28 root root       4096 Dec 15 15:56 [01;34mlib[0m
+dr-xr-xr-x. 42 root root      24576 Dec 15 15:56 [01;34mlib64[0m
+drwxr-xr-x. 24 root root       4096 Dec 15 15:56 [01;34mlibexec[0m
+drwxr-xr-x. 12 root root        131 Dec 15 15:37 [01;34mlocal[0m
+dr-xr-xr-x.  2 root root      16384 Dec 17 10:26 [01;34msbin[0m
+drwxr-xr-x. 87 root root       4096 Dec 15 15:56 [01;34mshare[0m
+drwxr-xr-x.  4 root root         34 Dec 15 16:22 [01;34msrc[0m
+lrwxrwxrwx.  1 root root         10 Dec 15 15:37 [01;36mtmp[0m -> [30;42m../var/tmp[0m
+drwxrwsr-x.  2 root villians     21 Dec 18 14:00 [01;34mvillians[0m
+[root@centos246 /]# su - wwilson
+[wwilson@centos246 ~]$ cat /web/[K.txt
+cat: /web.txt: No such file or directory
+[wwilson@centos246 ~]$ cat /usr/herps[K[Kos/web.txt.
+cat: /usr/heros/web.txt.: No such file or directory
+[wwilson@centos246 ~]$ cat /usr/heros/web.txt.[K
+This file contains confidential information for the heros department.
+
+[wwilson@centos246 ~]$ cat /usr/villians/oct.txt
+This file contains confidential information of the villian department.
+
+[wwilson@centos246 ~]$ logout
+[root@centos246 /]# sudo chmod 0-[K[Ko-r /usr/hr[Keros[13P - wwilson[2Pls -l /usrsu - wwilsondo chmod o-r /usr/heros
+[root@centos246 /]# sudo chmod o-r /usr/heros[Ksudo chmod o-r /usr/heros[C[1P /usr/herosx /usr/heros
+[root@centos246 /]# ls -l/[K /usr
+total 120
+dr-xr-xr-x.  2 root root      24576 Dec 15 16:22 [0m[01;34mbin[0m
+drwxrwsr-x.  2 root civilians    21 Dec 18 14:02 [01;34mcivilians[0m
+drwxr-xr-x.  2 root root          6 Apr 11  2018 [01;34metc[0m
+drwxr-xr-x.  2 root root          6 Apr 11  2018 [01;34mgames[0m
+drwxrws---.  2 root heros        21 Dec 18 13:56 [01;34mheros[0m
+drwxr-xr-x. 35 root root       4096 Dec 15 15:56 [01;34minclude[0m
+dr-xr-xr-x. 28 root root       4096 Dec 15 15:56 [01;34mlib[0m
+dr-xr-xr-x. 42 root root      24576 Dec 15 15:56 [01;34mlib64[0m
+drwxr-xr-x. 24 root root       4096 Dec 15 15:56 [01;34mlibexec[0m
+drwxr-xr-x. 12 root root        131 Dec 15 15:37 [01;34mlocal[0m
+dr-xr-xr-x.  2 root root      16384 Dec 17 10:26 [01;34msbin[0m
+drwxr-xr-x. 87 root root       4096 Dec 15 15:56 [01;34mshare[0m
+drwxr-xr-x.  4 root root         34 Dec 15 16:22 [01;34msrc[0m
+lrwxrwxrwx.  1 root root         10 Dec 15 15:37 [01;36mtmp[0m -> [30;42m../var/tmp[0m
+drwxrwsr-x.  2 root villians     21 Dec 18 14:00 [01;34mvillians[0m
+[root@centos246 /]# su - lluthor
+[lluthor@centos246 ~]$ ls /usr/herps[K[Kos
+ls: cannot open directory /usr/heros: Permission denied
+[lluthor@centos246 ~]$ ls /usr/heros[K[K[K[K[K[K[K[K[K[K[K[K[Ko[Klogout
+[root@centos246 /]# su - lluthor[2Pls -l /usrsudo chmod o-x /usr/heros[1P[1P[1P[1P[C[1P[C[C[C[C[C[C[C[C[C[C[1P/usr/heros[1P/usr/herosr/usr/heros /usr/heros[C[C[C[C[C[C[C[C[C[C[K[K[K[K[Kvillians
+[root@centos246 /]# chmod o-r /usr/villians[1P[C[1P /usr/villians- /usr/villiansx /usr/villians
+[root@centos246 /]# chmod o-x /usr/villians[K[K[K[K[K[K[Kr /usr/villians[K[K[K[K[K[K[K[Kcivill[Kians
+[root@centos246 /]# chmod o-r /usr/civilians[8Px /usr/vr /usr/villians[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Psu - lluthorchmod o-r /usr/villians[7Px /usr/vr /usr/civilians[8Px /usr/v\[K[Kcivilina[K[K[Kians
+[root@centos246 /]# chmod o-x /usr/civiliansr[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Px /usr/villiansr[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Psu - lluthor[2Pls -l /usr
+total 120
+dr-xr-xr-x.  2 root root      24576 Dec 15 16:22 [0m[01;34mbin[0m
+drwxrws---.  2 root civilians    21 Dec 18 14:02 [01;34mcivilians[0m
+drwxr-xr-x.  2 root root          6 Apr 11  2018 [01;34metc[0m
+drwxr-xr-x.  2 root root          6 Apr 11  2018 [01;34mgames[0m
+drwxrws---.  2 root heros        21 Dec 18 13:56 [01;34mheros[0m
+drwxr-xr-x. 35 root root       4096 Dec 15 15:56 [01;34minclude[0m
+dr-xr-xr-x. 28 root root       4096 Dec 15 15:56 [01;34mlib[0m
+dr-xr-xr-x. 42 root root      24576 Dec 15 15:56 [01;34mlib64[0m
+drwxr-xr-x. 24 root root       4096 Dec 15 15:56 [01;34mlibexec[0m
+drwxr-xr-x. 12 root root        131 Dec 15 15:37 [01;34mlocal[0m
+dr-xr-xr-x.  2 root root      16384 Dec 17 10:26 [01;34msbin[0m
+drwxr-xr-x. 87 root root       4096 Dec 15 15:56 [01;34mshare[0m
+drwxr-xr-x.  4 root root         34 Dec 15 16:22 [01;34msrc[0m
+lrwxrwxrwx.  1 root root         10 Dec 15 15:37 [01;36mtmp[0m -> [30;42m../var/tmp[0m
+drwxrws---.  2 root villians     21 Dec 18 14:00 [01;34mvillians[0m
+[root@centos246 /]# exit
+exit
+
+Script done on Fri 18 Dec 2020 02:15:52 PM EST
