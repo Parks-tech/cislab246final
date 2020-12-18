@@ -1,0 +1,27 @@
+Script started on Fri 18 Dec 2020 03:02:12 PM EST
+[root@centos246 ~]# ls -l /usr[K[K[K[K[K[K[K[K[K[Kcd /
+[root@centos246 /]# ls -l [K /usr
+total 120
+dr-xr-xr-x.  2 root root      24576 Dec 15 16:22 [0m[01;34mbin[0m
+drwxrws---.  2 root civilians    21 Dec 18 14:02 [01;34mcivilians[0m
+drwxr-xr-x.  2 root root          6 Apr 11  2018 [01;34metc[0m
+drwxr-xr-x.  2 root root          6 Apr 11  2018 [01;34mgames[0m
+drwxrws---.  2 root heros        21 Dec 18 13:56 [01;34mheros[0m
+drwxr-xr-x. 35 root root       4096 Dec 15 15:56 [01;34minclude[0m
+dr-xr-xr-x. 28 root root       4096 Dec 15 15:56 [01;34mlib[0m
+dr-xr-xr-x. 42 root root      24576 Dec 15 15:56 [01;34mlib64[0m
+drwxr-xr-x. 24 root root       4096 Dec 15 15:56 [01;34mlibexec[0m
+drwxr-xr-x. 12 root root        131 Dec 15 15:37 [01;34mlocal[0m
+dr-xr-xr-x.  2 root root      16384 Dec 17 10:26 [01;34msbin[0m
+drwxr-xr-x. 87 root root       4096 Dec 15 15:56 [01;34mshare[0m
+drwxr-xr-x.  4 root root         34 Dec 15 16:22 [01;34msrc[0m
+lrwxrwxrwx.  1 root root         10 Dec 15 15:37 [01;36mtmp[0m -> [30;42m../var/tmp[0m
+drwxrws---.  2 root villians     21 Dec 18 14:00 [01;34mvillians[0m
+[root@centos246 /]# tail -n3 /etc/group
+heros:x:1010:pparker,wwilson,ckent
+villians:x:1011:vvdoom,ooctavius,lluthor
+civilians:x:1012:gstacy,llane,rdawes
+[root@centos246 /]# exit
+exit
+
+Script done on Fri 18 Dec 2020 03:03:21 PM EST

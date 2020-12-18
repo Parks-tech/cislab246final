@@ -1,0 +1,27 @@
+Script started on Fri 18 Dec 2020 03:02:12 PM EST
+[root@centos246 ~]# cd /l /usr
+[root@centos246 /]# ls -l /usr
+total 120
+dr-xr-xr-x.  2 root root      24576 Dec 15 16:22 bin
+drwxrws---.  2 root civilians	 21 Dec 18 14:02 civilians
+drwxr-xr-x.  2 root root	  6 Apr 11  2018 etc
+drwxr-xr-x.  2 root root	  6 Apr 11  2018 games
+drwxrws---.  2 root heros	 21 Dec 18 13:56 heros
+drwxr-xr-x. 35 root root       4096 Dec 15 15:56 include
+dr-xr-xr-x. 28 root root       4096 Dec 15 15:56 lib
+dr-xr-xr-x. 42 root root      24576 Dec 15 15:56 lib64
+drwxr-xr-x. 24 root root       4096 Dec 15 15:56 libexec
+drwxr-xr-x. 12 root root	131 Dec 15 15:37 local
+dr-xr-xr-x.  2 root root      16384 Dec 17 10:26 sbin
+drwxr-xr-x. 87 root root       4096 Dec 15 15:56 share
+drwxr-xr-x.  4 root root	 34 Dec 15 16:22 src
+lrwxrwxrwx.  1 root root	 10 Dec 15 15:37 tmp -> ../var/tmp
+drwxrws---.  2 root villians	 21 Dec 18 14:00 villians
+[root@centos246 /]# tail -n3 /etc/group
+heros:x:1010:pparker,wwilson,ckent
+villians:x:1011:vvdoom,ooctavius,lluthor
+civilians:x:1012:gstacy,llane,rdawes
+[root@centos246 /]# exit
+exit
+
+Script done on Fri 18 Dec 2020 03:03:21 PM EST
