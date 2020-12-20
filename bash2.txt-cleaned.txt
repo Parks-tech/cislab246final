@@ -1,0 +1,30 @@
+Script started on Sun 20 Dec 2020 02:26:45 PM EST
+[root@centos246 ~]# vi newdepo2.sht
+"newdepo2.sh"_[New]s25L,m451C writtenudo chmod 770 $DIRsudo chmod g+s $DIRsudo chmod o_+s $DIRdusudo chown $USER:$DEPT $dDIRecho "Done.":wq											~												    ~													~												    ~													~												    ~													~												    ~													~												    ~													~												    ~													~												    ~													~												    ~													~												    ~													~												    ~													~												    ~													~												    ~													~												    ~													~												    ~													~												    ~													~												    ~													~												    -- INSERT --#!/bin/bashhhecho "Enter a new department name:"read DEPTsudo fgroupadd $DEPT || { echo "Departement cant exist alreaydy!:"; exit 1; }dechoecho :"Enter a new user Admisn for $DEPT:"read USERsudo usserdaadd -m -fg $DEPT $USER || { ehcho "user already exitsts!"; exit 1; }sudo usermod a-aG wheel $USERsudo passwed $us~												       ~												   USERDIR="/${DEPT}_dept"
+[root@centos246 ~]# bash newdepo2.sh
+Enter a new department name:
+Lawye
+Enter a new user Admin for Law:
+Dave
+Changing password for user Dave.
+New password:
+BAD PASSWORD: The password fails the dictionary check - it is based on a dictionary word
+Retype new password:
+passwd: all authentication tokens updated successfully.
+Done.
+[root@centos246 ~]# bash newdepo2.sh
+Enter a new department name:
+Law
+groupadd: group 'Law' already exists
+Department cant exist already!
+[root@centos246 ~]# bash newdepo2.sh
+Enter a new department name:
+Sales
+Enter a new user Admin for Sales:
+Dave
+useradd: user 'Dave' already exists
+user already exists!
+[root@centos246 ~]# exit
+exit
+
+Script done on Sun 20 Dec 2020 02:34:33 PM EST
